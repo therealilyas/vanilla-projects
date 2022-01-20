@@ -1,0 +1,15 @@
+.game-over {
+    cursor: pointer;
+    color: white;
+    background: rgb(95, 0, 143);
+    @include displayFlex();
+    @include positionPadding();
+    .restart-btn {
+        text-align: center;
+        @include btnStyle;
+        &:hover {
+            color: rgb(52, 6, 71);
+            background: white;
+        }
+    }
+}

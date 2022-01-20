@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="buttons">
+        <button class="start-btn" id="startBtn">Start Quiz</button>
+    </div>
+
+    <div class="quiz" id="quizBox">
+        <header>
+            <div class="quiz-title">Awesome Quiz Application </div>
+            <div class="timer-section" id="timerBox">Time Left
+                <div class="timer" id="timer"></div>
+            </div>
+        </header>
+        <section>
+            <div class="question" id="questionTitle">
+                <!-- <span>What does HTML stand for?</span> -->
+
+            </div>
+            <div class="answers-list" id="variantBox">
+
+                <!-- 
+                <div class="variant">
+                    <span>Hyper Text Markup Language</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="variant">
+                    <span>Hyper Text Markup Language</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="variant">
+                    <span>Hyper Text Markup Language</span>
+                    <div><i class="fas fa-times"></i></div>
+                </div>
+                <div class="variant">
+                    <span>Hyper Text Markup Language</span>
+                    <div><i class="fas fa-times"></i></div>
+                </div> -->
+
+
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="questions-number">
+                <span id="questionsNumber"></span> of 5 Questions
+            </div>
+
+            <div class="next-btn" id="nextBtn">
+                Next Que
+            </div>
+            <div class="end-btn" id="endBtn">
+                End Que
+            </div>
+
+        </footer>
+    </div>
+
+    <div class="end-of-quiz" id="resulOfQuiz">
+        <div class="result" id="result">Your result is <span id="resultNumber"></span> of 5 </div>
+        <div class="restart" id="restartBtn">Restart</div>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
