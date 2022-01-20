@@ -1,0 +1,120 @@
+* {
+    font-family: Lucida Console, sans-serif;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper {
+    border: 2px solid mediumpurple;
+    width: 20rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    margin: 1rem;
+    color: mediumorchid;
+    font-size: 2rem;
+    font-family: cursive;
+}
+
+.todo {
+    width: 15rem;
+}
+
+.footer {
+    margin: 1rem;
+}
+
+.clear-todo-btn {
+    margin: 0;
+}
+
+.inputContainer {
+    padding: 0;
+    margin-right: 2rem;
+}
+
+input {
+    width: 15rem;
+    height: 26px;
+    outline: none;
+    border: 1px solid mediumpurple;
+    border-radius: 0;
+    color: rgb(97, 65, 161);
+    background-color: rgb(205, 193, 226);
+    position: relative;
+}
+
+.add-todo-btn {
+    position: absolute;
+    border-radius: 0;
+    height: 30px;
+    margin: 0;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.add-todo-btn.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+button {
+    background-color: mediumpurple;
+    color: #fff;
+    border: 1px solid mediumpurple;
+    border-radius: 0;
+    padding: 8px;
+}
+
+button:hover {
+    background-color: #fff;
+    border: 1px solid mediumpurple;
+    color: mediumpurple;
+}
+
+.clear-todo-btn {
+    opacity: 0.6;
+    pointer-events: none;
+    background-color: mediumpurple;
+    color: #fff;
+    border: 1px solid mediumpurple;
+    border-radius: 0;
+    padding: 8px;
+}
+
+.clear-todo-btn.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    border: 1px solid slategrey;
+    /* background-color: rgb(253, 220, 225); */
+    color: rgb(97, 65, 161);
+    margin-top: 0.5rem;
+    padding-left: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li span {
+    margin-top: 5px;
+    font-size: 15px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-form">
+        <h2>Adding Employees Form</h2>
+        <form>
+            <table>
+                <tr>
+                    <td class="label">Name:</td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+
+                <tr>
+                    <td class="label">Job: </td>
+                    <td><input type="text" id="job"></td>
+                </tr>
+                <tr>
+                    <td class="label">Passport: </td>
+                    <td><input type="text" id="passport"></td>
+                </tr>
+                <tr>
+                    <td class="label">Country:</td>
+                    <td><input type="text" id="country"></td>
+                </tr>
+            </table>
+        </form>
+        <button type="submit" class="add-employee-btn" onclick="addEmployee(event)">
+            Add Employee</bFutton>
+
+    </div>
+    <div class="container-employees">
+        <h2>All Employees</h2>
+        <ul id="employeesUL" class="employees-ul">
+        </ul>
+    </div>
+
+    <div class="container-search" id="containerSearch">
+        <h2>Search Employee</h2>
+        
+        <span></span>
+        <input type="text" id="searchInput">
+        <span></span>
+
+        <button class="search-times" id="searchTimesBtn">X</button>
+        <div id="searchResultDiv"></div>
+    </div>
+
+    <div class="container-edit-employee" id="editEmployeeContainer">
+        <h2>Employee Edit</h2>
+        <form>
+            <table>
+                <tr>
+                    <td class="label">Name:</td>
+                    <td><input type="text" id="editName"></td>
+                </tr>
+
+                <tr>
+                    <td class="label">Job: </td>
+                    <td><input type="text" id="editJob"></td>
+                </tr>
+                <tr>
+                    <td class="label">Passport: </td>
+                    <td><input type="text" id="editPassport"></td>
+                </tr>
+                <tr>
+                    <td class="label">Country:</td>
+                    <td><input type="text" id="editCountry"></td>
+                </tr>
+            </table>
+        </form>
+        <button type="submit" class="edit-employee-btn" id="saveEditedInfoBtn">
+            Save</bFutton>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
